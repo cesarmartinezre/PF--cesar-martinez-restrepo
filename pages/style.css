@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2? family= Open+Sans:wght@400;500;600 & display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Open sans;
+    
+}
+
+/* estilo al header */
+.header{
+    background-color: #484441;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 5px 3%;
+}
+.header .logo{
+    cursor: pointer;
+    
+}
+.header .logo img{
+    height: 70px;
+    width: auto;
+}
+.header .logo:hover{
+    transform: scale(1.2);
+}
+header nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 700;
+    color: aliceblue;
+}
+header nav a:hover{
+    transform: scale(1.1);
+    color: black;
+}
+/* main de acerca */
+main{
+    background-color: #ebe6ea;
+
+}
+
+.acerca{
+    text-align: center;
+    padding: 45px;
+    background-color: #ebe6ea;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Aplicamos estilos a las card */
+main > .tarjetas{
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: box-shadow 0.3 ease-in-out;
+
+}
+main > .tarjetas:hover{
+    /* Arriba-Derecha-Abajo */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+main > .tarjetas > img{
+    width: 100%;
+    height: fit-content;
+}
+.img-propia{
+    width: 100%;
+    height: 500px;
+}
+
+/* galeria */
+section div p{
+    flex-direction: column;
+    padding: 50px;
+
+}
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+
+
+}
+
+/* estilo de contacto */
+.main{
+    background-image: url(./media/contacto.jpeg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+form{
+    width: 458px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+.contacto2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+
+}
+textarea{
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 500px;
+
+
+}
+#boton{
+    background: #0c181c;
+    color: #fff;
+    padding: 20px;
+}
+#boton:hover{
+    cursor: pointer;
+}
+@media(max-width:480px){
+    form{
+        width: 100px;
+
+    }
+}
+/* estilo de blogs */
+.blogs{
+    text-align: center;
+    padding: 45px;
+    background-color: #ebe6ea;
+}
+/* footer */
+footer{
+    font-size: 10px;
+    text-align: center;
+
+}
