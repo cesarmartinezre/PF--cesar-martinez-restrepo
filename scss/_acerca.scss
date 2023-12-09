@@ -1,0 +1,49 @@
+$color-blanco: #ebe6ea;
+$color-azul: aliceblue;
+$color-negro: black;
+$color-gris: #484441;
+
+/* main de acerca */
+
+main {
+    background-color: $color-blanco;
+  }
+  
+  .acerca {
+    text-align: center;
+    padding: 45px;
+    background-color: $color-blanco;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    > .tarjetas {
+      width: 300px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      margin-top: 20px;
+      transition: box-shadow 0.3 ease-in-out;
+  
+      &:hover {
+        /* Arriba-Derecha-Abajo */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      }
+  
+      > img {
+        width: 100%;
+        height: fit-content;
+      }
+    }
+  }
+  
+  /* Aplicamos estilos a las card */
+  
+  .img-propia {
+    width: 100%;
+    height: 500px;
+  }
+  

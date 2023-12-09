@@ -1,0 +1,50 @@
+$color-blanco: #ebe6ea;
+$color-azul: aliceblue;
+$color-negro: black;
+
+@mixin text {
+  text-align: center;
+  flex-direction: column;
+}
+/* estilo al main */
+
+main {
+    background-color: $color-blanco;
+  }
+  
+  .texto {
+    @include text;
+    font-size: 20px;
+    padding: 50px;
+  }
+  
+  .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 10px;
+    padding: 40px 0;
+    overflow: hidden;
+  
+    > a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    }
+  
+    img {
+      width: 100%;
+      vertical-align: top;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+  
+    a:hover img {
+      filter: blur(2px);
+      transform: rotate(10deg) scale(1.3);
+    }
+  }
+  

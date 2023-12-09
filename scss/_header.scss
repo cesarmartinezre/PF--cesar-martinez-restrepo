@@ -1,0 +1,55 @@
+
+$color-blanco: #ebe6ea;
+$color-azul: aliceblue;
+$color-negro: black;
+$color-gris: #484441;
+
+@mixin text {
+  text-align: center;
+  flex-direction: column;
+}
+
+/* estilo al header */
+
+
+.header {
+  background-color: $color-gris;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 5px 3%;
+
+  .logo {
+    cursor: pointer;
+
+    img {
+      height: 70px;
+      width: auto;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+header nav a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 15px;
+  font-size: 700;
+  color: $color-azul;
+
+  &:hover {
+    transform: scale(1.1);
+    color: $color-negro;
+  }
+}
+
+@media (max-width: 1023px) {
+  .botones {
+    height: auto;
+    @include text;
+  }
+}

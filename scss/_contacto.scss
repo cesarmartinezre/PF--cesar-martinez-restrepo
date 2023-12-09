@@ -1,0 +1,63 @@
+/* estilo de contacto */
+
+.main {
+    background-image: url(../media/contacto.jpeg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+  }
+  
+  form {
+    width: 458px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+  
+  .contacto2 {
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+  }
+  
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+    min-height: 200px;
+    max-height: 200px;
+    max-width: 500px;
+  }
+  
+  #boton {
+    background: #0c181c;
+    color: #fff;
+    padding: 20px;
+  
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    form {
+      width: 100px;
+    }
+  }
